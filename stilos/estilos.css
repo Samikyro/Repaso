@@ -68,3 +68,24 @@ body {
 .secondaryButton:hover {
     box-shadow: 3px 3px deeppink;
 }
+
+.buscar {
+    background-color: white;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.buscar:focus-within {
+    border: 1px solid pink;
+}
+
+
+/*cualquier input que este justo debajo de la clase buscar se le puedaaplicar 
+la clase, por ejemplo para quitar el borde
+*/
+
+.buscar>input {
+    outline: none;
+    border: 0px;
+}
