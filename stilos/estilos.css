@@ -8,6 +8,11 @@ ul {
     margin: 0px;
 }
 
+h1 {
+    font-size: xx-large;
+    color: grey;
+}
+
 body {
     margin: 0px;
 }
@@ -120,15 +125,33 @@ la clase, por ejemplo para quitar el borde
 
 .separacion {
     margin: 10px;
+    background-color: rgb(78, 78, 90);
+    box-shadow: 5px 10px 5px rgb(235, 226, 226);
+    border-radius: 10px;
 }
 
 .contenedorImage {
     width: 240px;
     height: 350px;
     display: flex;
+    margin-bottom: 10px;
+}
+
+.contenedorImage:hover {
+    cursor: pointer;
+    transform: scale(1.02);
 }
 
 .contenedorImage>img {
     object-fit: cover;
     width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.breedTittle {
+    color: white;
+    margin: 10px;
+    font-weight: bold;
+    font-size: x-large;
 }
