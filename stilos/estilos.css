@@ -16,11 +16,25 @@ body {
 /* colocar los objetos uno al lado del otro */
 
 .navbar {
-    /* Sin embargo los coloca todo junto*/
+    /* Sin embargo los coloca todo junto, para separarlos*/
     display: flex;
     /* Dar espacio entre cada item*/
     justify-content: space-between;
     padding: 10px;
+    /*color de fondo*/
+    background-color: rgb(222, 219, 226);
+    /*linea delimitante*/
+    border-bottom: 1px solid gray;
+    /*sombra*/
+    box-shadow: 1px 1px gray;
+}
+
+
+/*cualquier li que este debajo de un nanbar, aplicarle las sigueintes clases*/
+
+.navbar>li {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -74,9 +88,15 @@ body {
     border: 1px solid gray;
     padding: 5px;
     border-radius: 8px;
+    /*ancho*/
+    width: 300px;
+    /* Separa el texto del icono buscar*/
+    display: flex;
+    justify-content: space-between;
 }
 
 .buscar:focus-within {
+    /*permite que al darle clik al cajon de busqueda este cambie de color*/
     border: 1px solid pink;
 }
 
@@ -88,4 +108,8 @@ la clase, por ejemplo para quitar el borde
 .buscar>input {
     outline: none;
     border: 0px;
+}
+
+.iconoBusqueda:hover {
+    color: blue;
 }
