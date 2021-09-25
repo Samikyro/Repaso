@@ -113,3 +113,22 @@ la clase, por ejemplo para quitar el borde
 .iconoBusqueda:hover {
     color: blue;
 }
+
+.posicionHorizontal {
+    display: flex;
+}
+
+.separacion {
+    margin: 10px;
+}
+
+.contenedorImage {
+    width: 240px;
+    height: 350px;
+    display: flex;
+}
+
+.contenedorImage>img {
+    object-fit: cover;
+    width: 100%;
+}
