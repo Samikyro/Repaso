@@ -1,0 +1,52 @@
+/*Crear un selector de tipo etiqueta para que 
+las viñetas de circulo no aparezcan en nunguna 
+lista de la paginas Ningun ul tenga estilos de lista*/
+
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
+}
+
+
+/* colocar los objetos uno al lado del otro */
+
+.navbar {
+    /* Sin embargo los coloca todo junto*/
+    display: flex;
+    /* Dar espacio entre cada item*/
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo {
+    /*altura*/
+    height: 90px;
+}
+
+.mainButton {
+    /*fondo*/
+    background-color: mediumpurple;
+    /*color de la letra*/
+    color: white;
+    border: 0px;
+    /*espacio hacia afuera dentro del boton*/
+    padding: 5px 12 px;
+    /*redondear los bordes del boton*/
+    border-radius: 6px;
+    /*negrilla en letra del boton*/
+    font-weight: bolder;
+}
+
+.mainButton:hover {
+    /*forma del cursos sobre el boton*/
+    cursor: pointer;
+    /*sobras al boton; horizontal, vertial y color*/
+    box-shadow: 3px 3px black;
+    /*al ubicarse en el botos se puede hacer mas grande o mas pequeño*/
+    transform: scale(1.5);
+}
