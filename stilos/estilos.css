@@ -28,11 +28,7 @@ body {
     height: 90px;
 }
 
-.mainButton {
-    /*fondo*/
-    background-color: mediumpurple;
-    /*color de la letra*/
-    color: white;
+.button {
     border: 0px;
     /*espacio hacia afuera dentro del boton*/
     padding: 5px 12 px;
@@ -42,11 +38,33 @@ body {
     font-weight: bolder;
 }
 
-.mainButton:hover {
+
+/*hover: modificador para la clase*/
+
+.button:hover {
     /*forma del cursos sobre el boton*/
     cursor: pointer;
-    /*sobras al boton; horizontal, vertial y color*/
-    box-shadow: 3px 3px black;
     /*al ubicarse en el botos se puede hacer mas grande o mas pequeño*/
     transform: scale(1.5);
+}
+
+.mainButton {
+    /*fondo*/
+    background-color: mediumpurple;
+    /*color de la letra*/
+    color: white;
+}
+
+.mainButton:hover {
+    /*sobras al boton; horizontal, vertial y color*/
+    box-shadow: 3px 3px black;
+}
+
+.secondaryButton {
+    background-color: lightslategrey;
+    color: white;
+}
+
+.secondaryButton:hover {
+    box-shadow: 3px 3px deeppink;
 }
